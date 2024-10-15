@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo del Header */
+  header {
+    background-color: #f44336;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav {
+    background-color: #e57373;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Navegación secundaria debajo del header */
+  .secondary-nav {
+    background-color: #81d4fa;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Contenedor principal que organiza aside y main */
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  /* Estilo del Main */
+  main {
+    flex: 3;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  
+  main article {
+    background-color: #ef9a9a;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  main article header, 
+  main article footer {
+    background-color: #f48fb1;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Navegación dentro del main */
+  .nav-in-main {
+    background-color: #81d4fa;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Estilo del Aside */
+  aside {
+    flex: 1;
+    background-color: #fff176;
+    padding: 20px;
+  }
+  
+  aside nav {
+    background-color: #fff59d;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilo del Footer */
+  footer {
+    background-color: #4caf50;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Telefonos pequeños */
+  @media(max-width: 320px){
+    header nav, .secondary-nav, .nav-in-main, aside nav{
+      font-size: 12px;
+    }
+    .container{
+      flex-direction: column;
+
+    }
+    main{
+      margin-right: 0;
+    }
+    aside{
+      margin-top: 20px;
+    }
+    footer{
+      font-size: 12px;
+      background-color: rgb(200, 19, 19);
+    }
+    main article{
+      margin-left: 5px;
+    }
+
+  }
+  /* Telefonos medianos */
+  @media(min-width:321px ) and (max-width:480px){
+    header nav, .secondary-nav, .nav-in-main, aside nav{
+      font-size: 14px;
+    }
+    .container{
+      flex-direction: column;
+    }
+    main{
+      margin-right: 0;
+    }
+    aside{
+      margin-top: 20px;
+    }
+    footer{
+      font-size: 14px;
+    }
+    main article{
+      margin-left: 5px;
+    }
+
+  }
+  /* Telefonos grandes */
+  @media(min-width:481px) and (max-width:767px){
+    header nav, .secondary-nav, .nav-in-main, aside nav{
+      font-size: 16px;
+    }
+    .container{
+      flex-direction: column;
+    }
+    main{
+      margin-right: 0;
+    }
+    aside{
+      flex-basis: 30%;
+      margin-top: 20px;
+    }
+    footer{
+      font-size: 12px;
+      
+    }
+    main article{
+      margin-left: 5px;
+    }
+
+  }
+
+  /* Tabletas pequeñas */
+  @media(min-width: 767px) and (max-width: 1024px){
+
+    header nav, .secondary-nav, .nav-in-main, aside nav{
+      font-size: 18px;
+    }
+    .container{
+      flex-direction: row;
+    }
+    main{
+      margin-right: 10;
+    }
+    aside{
+      flex-basis: 30%;
+      margin-top: 10px;
+    }
+    footer{
+      font-size: 18px;
+      margin-left: 20px;
+        margin-right: 20px;
+    }
+    main article{
+      margin-left: 5px;
+    }
+
+  }
+  @media (min-width:1025px)and(max-width:1280px) {
+    
+    header nav, .secondary-nav, .nav-in-main, aside nav{
+        font-size: 18px;
+      }
+      .container{
+        flex-direction: row;
+      }
+      main{
+        margin-right: 10;
+      }
+      aside{
+        flex-basis: 30%;
+        margin-top: 10px;
+      }
+      footer{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+      main article{
+        margin-left: 5px;
+      }
+  
+    }
+    @media(min-width: 1281px) and (max-width: 1920px){
+        header nav, .secondary-nav, .nav-in-main, aside nav{
+            font-size: 18px;
+          }
+          .container{
+            flex-direction: row;
+          }
+          main{
+            margin-right: 10;
+          }
+          aside{
+            flex-basis: 30%;
+            margin-top: 10px;
+          }
+          footer{
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 18px;
+          }
+          main article{
+            margin-left: 5px;
+          }
+    }
+
+  
+    @media(min-width: 1921px){
+        header nav, .secondary-nav, .nav-in-main, aside nav{
+            font-size: 24px;
+          }
+          .container{
+            flex-direction: row;
+          }
+          main{
+            margin-right: 10;
+          }
+          aside{
+            flex-basis: 15%;
+           
+          }
+          footer{
+           font-size: 24%;
+          }
+
+    }
